@@ -52,7 +52,7 @@
 SELECT `id`, `code`, `lastname`, `firstname` FROM `Author` WHERE `lastname`= 'Author_lastname';
 ```
 ### Вставка
-Вставка во все таблицы ограничивается всегда одним запросом, кроме ситуации когда вы добаляете книгу. Необходимо не только добавить запись в таблицу `Book`, но и добавить строчки в таблицы `Book_author`, `Book_genre`.
+Вставка во все таблицы ограничивается всегда одним запросом, кроме ситуации добавления книги. Необходимо не только добавить запись в таблицу `Book`, но и добавить строчки в таблицы `Book_author`, `Book_genre`.
 Пример вставки нового читателя:
 ```
 INSERT INTO `Reader` (`firstname`, `lastname`, `phone`, `adress`) VALUES ('Reader_firstname', 'Reader_lastname', 'Reader_phone', 'Reader_adress');
